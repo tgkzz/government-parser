@@ -6,6 +6,10 @@ type URL struct {
 }
 
 type Filter struct {
+	SizeOfParsing int
+	SizeOfPage    int
+	DateFrom      string
+	DateTo        string
 }
 
 type Result struct {

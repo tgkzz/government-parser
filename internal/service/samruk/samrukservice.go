@@ -11,7 +11,7 @@ type SamrukService struct {
 }
 
 type ISamrukService interface {
-	GetLotsByFilter(filter models.Filter) ([]models.Result, error)
+	UploadLotsByFilter(filter models.Filter, id int) error
 	GetLotsById(id string) (models.Result, error)
 }
 

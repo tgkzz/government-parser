@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS results (
+    ID SERIAL PRIMARY KEY,
+    Number VARCHAR(255),
+    NameRu TEXT NOT NULL,
+    NameKk TEXT NOT NULL,
+    NameEn TEXT NULL,
+    TenderType VARCHAR(255) NOT NULL,
+    SumTruNoNds DOUBLE PRECISION NOT NULL,
+    AcceptanceBeginDateTime TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+    AcceptanceEndDateTime TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+    AdvertStatus VARCHAR(255) NOT NULL,
+    FlagApplicationFiled BOOLEAN NOT NULL,
+    FlagNegotiationOutside BOOLEAN NULL
+);

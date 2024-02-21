@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"parser/config"
@@ -38,9 +37,5 @@ func main() {
 
 	s := service.NewService(r, cfg.Url)
 
-	_, err = s.Samruk.GetLotsById("962298")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	s.Execute()
 }
